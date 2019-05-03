@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+		<title>三商美邦 :: 投資型商品</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="./css/jquery-ui.theme.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+		<script src="js/modernizr.custom.js"></script>
+        <script src="./js/jquery-3.4.0.min.js"></script>
+        <script src="js/code.js"></script>
+        <script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>          
+	</head>
+	<body>
+		<div id="st-container" class="st-container">	
+			<nav class="st-menu st-effect-12" id="menu-12" name="menu-12">
+            <h3 class="icon icon-stack" style="color: #FFFFFF;"><a href="start.html">首頁</a></h3>
+				<li><h3 class="icon icon-stack" style="color: #FFFFFF;"><a href="#">投資型保險概述</a></h3>
+				<ul class="sub-menu">
+					<li><a class="icon icon-data" href="1_1.html">理財金三角</a></li>
+					<li><a class="icon icon-location" href="1_2.html">人生收支曲線</a></li>
+					<li><a class="icon icon-photo" href="1_4.html">越早越輕鬆</a></li>
+					<li><a class="icon icon-wallet" href="1_5.html">理財工具比較</a></li>
+                    <li><a class="icon icon-wallet" href="1_6.html">運作流程</a></li>
+				</ul></li>
+                <li><h3 class="icon icon-stack" style="color: #FFFFFF;"><a href="#">購買的理由</a></h3>
+                <ul class="sub-menu">
+					<li><a class="icon icon-data" href="2_1.html">彈性調整、靈活運用</a></li>
+					<li><a class="icon icon-location" href="2_2.html">圓夢計畫</a></li>
+					<li><a class="icon icon-study" href="2_3.html">退休規劃</a></li>
+					<li><a class="icon icon-photo" href="2_4.html">稅務規劃</a></li>
+					<li><a class="icon icon-wallet" href="2_5.html">風險管理</a></li>
+                    <li><a class="icon icon-wallet" href="2_6.html">定期定額投資法</a></li>
+				</ul></li>
+                <h3 class="icon icon-stack" style="color: #FFFFFF;"><a href="3_1.html">投資型保險商品種類</a></h3>
+                <h3 class="icon icon-stack now" style="color: #FFFFFF;"><a href="q2.html">相關問卷</a></h3>
+                <h3 class="icon icon-stack" style="color: #FFFFFF;"><a href="5_1.html">特點</a></h3>
+			</nav>
+			<div class="st-pusher">              
+			  <div class="st-content" ><!-- this is the wrapper for the content -->
+					<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->					
+						<div class="main clearfix">
+							<div id="st-trigger-effects" class="column_btn">
+								<button data-effect="st-effect-12"><img src="btn.png" width="80" height="80"></button>
+							</div>
+							<script id='code_1'>
+											$(function() {
+												$("#btnNext").click(function() {
+													window.location.replace("5_1.html");
+												});
+													$("#btnPrev").click(function() {
+														window.location.replace("3_1.html");
+													});
+											});
+        					</script>
+            
+            <div align="center" id="btnPrev" class="boxL"><img src="prev.png" width="32" height="32"></div>
+            <div align="center" id="btnNext" class="boxR"><img src="next.png" width="32" height="32"></div><div id="div_qbg"><div id="qStart"><img src="images/qBG.jpg" width="1024" height="768" id="qStartBtn"/></div>           
+            <div id="div_q">
+<div id="questions" class="qDivs"><table width="100%" border="0" cellspacing="0" cellpadding="12">
+   <tr>
+    <td><b>財務目標及風險容忍度分析</b></td>
+    <td><b>0分</b></td>
+    <td><b>1分</b></td>
+    <td><b>2分</b></td>
+    <td><b>3分</b></td>
+    </tr>
+  <tr bgcolor="#F3F3F3">
+    <td bgcolor="#F3F3F3">1.您過去是否有任何的理財投資相關經驗？</td>
+    <td><input type="radio" name="q1" value="1" id="q1_3">
+      <label for="q1_3"> 完全沒有</label></td>
+    <td><input type="radio" name="q1" value="2" id="q1_0">
+      <label for="q1_0"> 很少有過</label></td>
+    <td><input type="radio" name="q1" value="3" id="q1_1"><label for="q1_1"> 曾經有過</label></td>
+    <td><input type="radio" name="q1" value="4" id="q1_2"><label for="q1_2"> 常常有經驗</label></td>
+  </tr>
+  <tr id="q2tr">
+    <td>2.您能容忍投資發生多少的損失？</td>
+    <td>&nbsp;</td>
+    <td><input type="radio" name="q2" value="2" id="q2_0"><label for="q2_0"> 0%~5%</label></td>
+    <td><input type="radio" name="q2" value="3" id="q2_1"><label for="q2_1"> 5%-10﹪</label></td>
+    <td><input type="radio" name="q2" value="4" id="q2_2"><label for="q2_2"> 10﹪以上</label></td>
+  </tr>
+  <tr bgcolor="#F3F3F3" id="q3tr">
+    <td bgcolor="#F3F3F3">3.您(要保人)的實際年齡是？(以足歲計算)</td>
+    <td>&nbsp;</td>
+    <td valign="middle" >
+    <ol>
+	        <li>
+	            <input type="radio" name="q3" value="2" id="q3_0">
+	            <label for="q3_0">20歲以下/<br/>65歲以上</label>
+	        </li>
+	    </ol></td>
+    <td><input type="radio" name="q3" value="3" id="q3_1"><label for="q3_1"> 46-65歲</label></td>
+    <td><input type="radio" name="q3" value="4" id="q3_2"><label for="q3_2"> 20-45歲</label></td>
+  </tr>
+  <tr id="q4tr">
+    <td>4.您(或您家庭)收入有多少用於儲蓄/理財/投資？</td>
+    <td>&nbsp;</td>
+    <td><input type="radio" name="q4" value="2" id="q4_0"><label for="q4_0"> 30%以下</label></td>
+    <td><input type="radio" name="q4" value="3" id="q4_1"><label for="q4_1"> 30%~70%</label></td>
+    <td><input type="radio" name="q4" value="4" id="q4_2"><label for="q4_2"> 70%以上</label></td>
+  </tr>
+  <tr bgcolor="#F3F3F3" id="q5tr">
+    <td bgcolor="#F3F3F3">5.您希望您的投資每年能有多少的獲利率？</td>
+    <td>&nbsp;</td>
+    <td><input type="radio" name="q5" value="2" id="q5_0"><label for="q5_0"> 2﹪</label></td>
+    <td><input type="radio" name="q5" value="3" id="q5_1"><label for="q5_1"> 2%-6﹪</label></td>
+    <td><input type="radio" name="q5" value="4" id="q5_2"><label for="q5_2"> 6%以上</label></td>
+  </tr>
+  <tr>
+    <td>6.如果您有一筆錢拿去投資，預計多久會用到它？</td>
+    <td>&nbsp;</td>
+    <td><input type="radio" name="q6" value="2" id="q6_0">
+      <label for="q6_0"> 2年以內</label></td>
+    <td><input type="radio" name="q6" value="3" id="q6_1">
+      <label for="q6_1"> 2-4年</label></td>
+    <td><input type="radio" name="q6" value="4" id="q6_2">
+      <label for="q6_2"> 4年以上</label></td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#F0F0F0" style="color:#F00">（第1題勾選0分者，總分即為0分）</td>
+    <td colspan="4" align="center" bgcolor="#F0F0F0"><input type="submit" name="send" id="send" value=" 送出 ">
+      <input type="submit" name="reset" id="reset" value=" 重新作答 ">
+      <div id="errorForm" style="color:#F00"> 請填完所有的題目喔! </div></td>
+    </tr>
+
+</table>
+</div>
+
+<div id="result" class="qDivs">
+  <div id="resultText">結果</div><div id="resultIcon" align="right"><img src="qresultIcon.png" width="220"></div></div>
+			  </div><!-- /div_q -->
+							</div><!-- /div_qbg -->
+					  </div><!-- /main -->
+					</div><!-- /st-content-inner -->
+				</div><!-- /st-content -->
+			</div><!-- /st-pusher -->
+		</div><!-- /st-container -->
+		<script src="js/classie.js"></script>
+		<script src="js/sidebarEffects.js"></script>
+	</body>
+</html>

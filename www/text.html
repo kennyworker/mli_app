@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+</head>
+
+<body>
+<form name="form1">
+<input name="t1" type="text" onBlur="check(this)"> 
+<input name="t2" type="text" onBlur="check2(this)">
+</form>
+
+<script language="javascript" >
+function check(obj)    {       
+obj.value = obj.value.replace(/[\s　]+/g,   "");       
+var   re=/[^0-9-a-z-A-Z]/;  
+if (re.test(obj.value)){ 
+obj.value=""  
+alert("不能有特殊符號"); 
+return false;   
+}
+} 
+
+function check2(obj)    {       
+obj.value = obj.value.replace(/[\s　]+/g,   "");       
+var   re=/[^\a-zA-Z\u4E00-\u9FA5]/g;  
+if (re.test(obj.value)){ 
+obj.value=""
+alert("名稱不能有數字或特殊符號，僅能輸入英文字母與中文字"); 
+return false;   
+}
+} 
+
+</script>
+</body>
+</html>
